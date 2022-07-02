@@ -1,0 +1,13 @@
+<div fxLayout="row wrap">
+    <h3>Liked Videos</h3>
+</div>
+<div fxLayout="row wrap" fxLayoutGap="12px grid">
+  <div fxFlex="30%" *ngFor="let likedVideo of likedVideos">
+      <a [routerLink]="['/video-details', likedVideo]">{{ likedVideo }}</a>
+  </div>
+</div>
+<!-- <div fxLayout="row wrap" fxLayoutGap="12px grid">
+    <div fxFlex="30%" *ngFor="let likedVideo of likedVideosDto">
+        <app-video-card [video]="likedVideo"></app-video-card>
+    </div>
+</div> -->
